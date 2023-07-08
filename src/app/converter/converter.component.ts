@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CurrencyService } from '../currency.service';
 import { Router } from '@angular/router';
 import { FixerService } from '../fixer.service';
 import { Currencies } from '../currencies';

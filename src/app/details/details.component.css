@@ -1,0 +1,79 @@
+/* details.component.css */
+
+.details-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .currency-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .back-button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .converter-panel {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .converter-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .converter-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .converter-label {
+    font-size: 16px;
+  }
+  
+  .converter-amount {
+    padding: 8px;
+    font-size: 16px;
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  .converter-currency {
+    padding: 8px;
+    font-size: 16px;
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  .convert-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .chart-container {
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .chart-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  

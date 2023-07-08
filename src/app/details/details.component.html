@@ -1,0 +1,42 @@
+<!-- details.component.html -->
+
+<div class="details-container">
+    <h2 class="currency-heading">From Currency: {{ fromCurrency }} - {{ getCurrencyName(fromCurrency)}}</h2>
+    <button class="back-button" (click)="goBack()">Go Back</button>
+
+    <div class="converter-panel">
+        <h3 class="converter-heading">Converter Panel</h3>
+        <div class="converter-inputs">
+            <label class="converter-label">Amount:</label>
+            <input class="converter-amount" type="text" [(ngModel)]="amount" />
+            <label class="converter-label">From:</label>
+            <select [(ngModel)]="fromCurrency" class="currency-select">
+                <option *ngFor="let currency of currencies" [value]="currency.code">{{ currency.code }}</option>
+            </select>
+            <label class="converter-label">To:</label>
+            <select [(ngModel)]="toCurrency" class="currency-select">
+                <option *ngFor="let currency of currencies" [value]="currency.code">{{ currency.code }}</option>
+            </select>
+            <button class="convert-button" (click)="convert()">Convert</button>
+        </div>
+        <div *ngIf="convertedValue" class="converted-result">
+            <span>{{ amount }}</span>
+            <span> {{ fromCurrency }}</span>
+            <span>=</span>
+            <span>{{ convertedValue }}</span>
+            <span> {{ toCurrency }}</span>
+          </div>
+          <div *ngIf="convertedValue" class="converted-result">
+            <span>1</span>
+            <span> {{ fromCurrency }}</span>
+            <span>=</span>
+            <span> {{ conversionRate }} </span>
+            <span>{{ toCurrency }}</span>
+          </div>
+    </div>
+
+    <div class="chart-container">
+        <h3 class="chart-heading">Historical Chart</h3>
+     <app-chart></app-chart>
+    </div>
+</div>
