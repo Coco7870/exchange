@@ -1,0 +1,26 @@
+.home-container {
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .details-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .details-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
