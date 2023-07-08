@@ -1,0 +1,58 @@
+.converter-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .sticky-panel {
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .amount-input {
+    padding: 8px;
+    font-size: 16px;
+    width: 150px;
+  }
+  
+  .currency-select {
+    padding: 8px;
+    font-size: 16px;
+    width: 100px;
+  }
+  
+  .swap-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .convert-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .details-button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .converted-result {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  

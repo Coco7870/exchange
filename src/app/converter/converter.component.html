@@ -1,0 +1,29 @@
+<div class="converter-container">
+    <div class="sticky-panel">
+      <input type="number" [(ngModel)]="amount" (input)="onAmountChange()" placeholder="Enter amount" class="amount-input">
+      <select [(ngModel)]="selectedFromCurrency" class="currency-select">
+        <option *ngFor="let currency of currencies" [value]="currency.code">{{ currency.code }}</option>
+      </select>
+      <button (click)="swapCurrencies()" class="swap-button">Swap</button>
+      <select [(ngModel)]="selectedToCurrency" class="currency-select">
+        <option *ngFor="let currency of currencies" [value]="currency.code">{{ currency.code }}</option>
+      </select>
+      <button (click)="convertCurrencies()"  class="convert-button">Convert</button>
+      <button [routerLink]="['/details', selectedFromCurrency, selectedToCurrency,amount]" class="details-button">Details</button>
+    </div>
+    <div *ngIf="convertedValue" class="converted-result">
+      <span>{{ amount }}</span>
+      <span> {{ selectedFromCurrency }}</span>
+      <span>=</span>
+      <span>{{ convertedValue }}</span>
+      <span> {{ selectedToCurrency }}</span>
+    </div>
+    <div *ngIf="convertedValue" class="converted-result">
+      <span>1</span>
+      <span> {{ selectedFromCurrency }}</span>
+      <span>=</span>
+      <span> {{ conversionRate }} </span>
+      <span>{{ selectedToCurrency }}</span>
+    </div>
+  </div>
+  
